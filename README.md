@@ -1,13 +1,30 @@
-# UAV-CSM47: UAV Construction Site Monitoring Dataset
+# CSM-DETR: Construction Site Monitoring via Mamba-Enhanced Detection Transformer for UAV Aerial Imagery
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-[![Dataset](https://img.shields.io/badge/Dataset-Baidu%20Pan-blue)](https://pan.baidu.com/s/15loWqv46y3VwKThWhLgQ2g?pwd=66kz)
+[![Dataset](https://img.shields.io/badge/Dataset-Baidu%20Pan-blue)](https://pan.baidu.com/s/1fKiM0qmcjHqRwHZwKAhtfA?pwd=vtwu)
 
 ## Overview
 
-**UAV-CSM47** (UAV Construction Site Monitoring with 47 categories) is a comprehensive benchmark dataset for UAV-based construction site object detection. The dataset contains **15,860 high-resolution aerial images** with **19,498 annotated object instances** across **47 construction-related categories**.
+This repository contains the official implementation of **CSM-DETR**, a novel Mamba-enhanced detection transformer specifically designed for UAV-based construction site monitoring. Our framework achieves state-of-the-art performance with 91.8% mAP@0.5 and 73.6% mAP@0.5:0.95 while maintaining real-time inference at 38 FPS.
 
-This dataset is designed to facilitate research in:
+### Key Features
+
+- **MobileMamba Backbone**: Achieves linear computational complexity O(n) through selective state space models
+- **Dual-Attention Spatial Integration (DASI)**: Captures both local details and global context through parallel attention streams
+- **Cross-Scale Deformable Fusion (CSDF)**: Enables flexible cross-scale feature interaction through deformable sampling
+- **Hierarchical Local-Aware Fusion (HLAF)**: Preserves fine-grained spatial information during multi-scale feature aggregation
+
+## Code Availability
+
+⚠️ **Note:** The source code is currently being organized and will be released upon paper acceptance. Please star this repository to stay tuned for updates.
+
+---
+
+## UAV-CSM47 Dataset
+
+We also release **UAV-CSM47** (UAV Construction Site Monitoring with 47 categories), a comprehensive benchmark dataset for UAV-based construction site object detection. The dataset contains **15,860 high-resolution aerial images** with **19,498 annotated object instances** across **47 construction-related categories**.
+
+The dataset is designed to facilitate research in:
 - UAV-based construction site monitoring
 - Aerial object detection
 - Multi-scale object detection
@@ -115,10 +132,12 @@ The dataset is organized into **5 major groups**:
 
 ## Download
 
-**Download Link:** [Baidu Pan](https://pan.baidu.com/s/15loWqv46y3VwKThWhLgQ2g?pwd=66kz)
+**File:** UAV-CSM.zip
 
-- **Link:** https://pan.baidu.com/s/15loWqv46y3VwKThWhLgQ2g?pwd=66kz
-- **Password:** 66kz
+**Download Link:** [Baidu Pan](https://pan.baidu.com/s/1fKiM0qmcjHqRwHZwKAhtfA?pwd=vtwu)
+
+- **Link:** https://pan.baidu.com/s/1fKiM0qmcjHqRwHZwKAhtfA?pwd=vtwu
+- **Password:** vtwu
 
 ## Dataset Structure
 
